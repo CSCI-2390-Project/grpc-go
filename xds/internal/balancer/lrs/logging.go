@@ -21,8 +21,8 @@ package lrs
 import (
 	"fmt"
 
-	"google.golang.org/grpc/grpclog"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/grpclog"
+	internalgrpclog "github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 )
 
 const prefix = "[lrs-lb %p] "

@@ -20,8 +20,8 @@ package client
 import (
 	"context"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/xds/internal/client/load"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/load"
 )
 
 // ReportLoad starts an load reporting stream to the given server. If the server

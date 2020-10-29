@@ -31,13 +31,13 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	_ "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/alts"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/google"
+	testpb "github.com/CSCI-2390-Project/grpc-go/interop/grpc_testing"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
 )
 
 var (

@@ -25,8 +25,8 @@ package backoff
 import (
 	"time"
 
-	grpcbackoff "google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/internal/grpcrand"
+	grpcbackoff "github.com/CSCI-2390-Project/grpc-go/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 )
 
 // Strategy defines the methodology for backing off after a grpc connection

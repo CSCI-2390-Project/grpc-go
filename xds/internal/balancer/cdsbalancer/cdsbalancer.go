@@ -22,19 +22,19 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/edsbalancer"
+	"github.com/CSCI-2390-Project/grpc-go/attributes"
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	"github.com/CSCI-2390-Project/grpc-go/balancer/base"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/internal/buffer"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/balancer/edsbalancer"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	xdsinternal "github.com/CSCI-2390-Project/grpc-go/xds/internal"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 )
 
 const (

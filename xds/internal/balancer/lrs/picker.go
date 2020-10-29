@@ -19,9 +19,9 @@
 package lrs
 
 import (
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal"
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/xds/internal"
 )
 
 const (

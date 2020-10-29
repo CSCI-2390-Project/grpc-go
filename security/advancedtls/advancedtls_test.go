@@ -28,11 +28,11 @@ import (
 	"net"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/security/advancedtls/internal/testutils"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/security/advancedtls/internal/testutils"
 )
 
 type s struct {

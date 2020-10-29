@@ -25,7 +25,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"google.golang.org/grpc/internal/leakcheck"
+	"github.com/CSCI-2390-Project/grpc-go/internal/leakcheck"
 )
 
 var lcFailed uint32

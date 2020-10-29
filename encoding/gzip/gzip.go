@@ -33,7 +33,7 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"google.golang.org/grpc/encoding"
+	"github.com/CSCI-2390-Project/grpc-go/encoding"
 )
 
 // Name is the name registered for the gzip compressor.

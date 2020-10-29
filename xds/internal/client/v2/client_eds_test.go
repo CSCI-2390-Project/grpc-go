@@ -22,13 +22,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	"github.com/golang/protobuf/ptypes"
 	anypb "github.com/golang/protobuf/ptypes/any"
-	"google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/version"
 )
 
 var (

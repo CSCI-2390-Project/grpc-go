@@ -19,7 +19,7 @@
 // Package grpclb defines a grpclb balancer.
 //
 // To install grpclb balancer, import this package as:
-//    import _ "google.golang.org/grpc/balancer/grpclb"
+//    import _ "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb"
 package grpclb
 
 import (
@@ -28,19 +28,19 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/resolver/dns"
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	grpclbstate "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/state"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/resolver/dns"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 
+	lbpb "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/grpc_lb_v1"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
 )
 
 const (

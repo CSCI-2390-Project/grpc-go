@@ -27,12 +27,12 @@ import (
 	"net"
 	"strings"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/metadata"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
 )
 
 var (

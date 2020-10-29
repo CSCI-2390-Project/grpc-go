@@ -27,20 +27,20 @@ import (
 	"sync"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/load"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/xds/internal/client/load"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/version"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/buffer"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
+	"github.com/CSCI-2390-Project/grpc-go/keepalive"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/bootstrap"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
 )
 
 var (

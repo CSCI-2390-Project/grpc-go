@@ -27,12 +27,12 @@ import (
 	"log"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/oauth"
+	"github.com/CSCI-2390-Project/grpc-go/examples/data"
+	ecpb "github.com/CSCI-2390-Project/grpc-go/examples/features/proto/echo"
 	"golang.org/x/oauth2"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/oauth"
-	"google.golang.org/grpc/examples/data"
-	ecpb "google.golang.org/grpc/examples/features/proto/echo"
 )
 
 var addr = flag.String("addr", "localhost:50051", "the address to connect to")

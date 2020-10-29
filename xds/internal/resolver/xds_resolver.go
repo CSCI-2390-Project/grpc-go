@@ -22,15 +22,15 @@ package resolver
 import (
 	"fmt"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/attributes"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	xdsinternal "github.com/CSCI-2390-Project/grpc-go/xds/internal"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/bootstrap"
 )
 
 const xdsScheme = "xds"

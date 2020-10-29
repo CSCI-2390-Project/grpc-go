@@ -21,13 +21,13 @@ package resolver
 import (
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
+	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
+	_ "github.com/CSCI-2390-Project/grpc-go/xds/internal/balancer/weightedtarget"
+	_ "github.com/CSCI-2390-Project/grpc-go/xds/internal/balancer/xdsrouting"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/serviceconfig"
-	_ "google.golang.org/grpc/xds/internal/balancer/weightedtarget"
-	_ "google.golang.org/grpc/xds/internal/balancer/xdsrouting"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 
 const (

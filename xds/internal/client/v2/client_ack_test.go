@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/codes"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils/fakeserver"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	"github.com/golang/protobuf/proto"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/testutils"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
-	"google.golang.org/grpc/xds/internal/version"
 )
 
 const (

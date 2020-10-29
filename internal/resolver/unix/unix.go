@@ -20,8 +20,8 @@
 package unix
 
 import (
-	"google.golang.org/grpc/internal/transport/networktype"
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/internal/transport/networktype"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 )
 
 const scheme = "unix"

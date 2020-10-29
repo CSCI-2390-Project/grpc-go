@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	"github.com/CSCI-2390-Project/grpc-go/security/advancedtls/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/security/advancedtls/testdata"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/security/advancedtls/internal/testutils"
-	"google.golang.org/grpc/security/advancedtls/testdata"
 )
 
 func (s) TestNewPEMFileProvider(t *testing.T) {

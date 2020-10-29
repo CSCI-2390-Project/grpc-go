@@ -21,9 +21,9 @@
 package proto
 
 import (
+	"github.com/CSCI-2390-Project/grpc-go/encoding"
 	privacy "github.com/CSCI-2390-Project/privacy-go"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/encoding"
 )
 
 // Name is the name registered for the proto compressor.

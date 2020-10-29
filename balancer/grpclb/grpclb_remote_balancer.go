@@ -26,18 +26,18 @@ import (
 	"sync"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	lbpb "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/grpc_lb_v1"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/keepalive"
+	"github.com/CSCI-2390-Project/grpc-go/metadata"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 	"github.com/golang/protobuf/proto"
 	timestamppb "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
 )
 
 // processServerList updates balancer's internal state, create/remove SubConns

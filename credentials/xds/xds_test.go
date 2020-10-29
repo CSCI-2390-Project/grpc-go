@@ -30,13 +30,13 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/testdata"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/testdata"
 )
 
 const (

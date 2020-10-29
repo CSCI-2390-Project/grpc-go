@@ -27,14 +27,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/load"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	"github.com/CSCI-2390-Project/grpc-go/balancer/roundrobin"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/balancer/balancergroup"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/load"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils"
 )
 
 var (

@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"testing"
 
-	"google.golang.org/grpc/codes"
+	"github.com/CSCI-2390-Project/grpc-go/codes"
 )
 
 type codeBench uint32

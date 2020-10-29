@@ -23,22 +23,22 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/codes"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/status"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/bootstrap"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils/fakeserver"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	lrspb "github.com/envoyproxy/go-control-plane/envoy/service/load_stats/v2"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
-	"google.golang.org/grpc/xds/internal/version"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	_ "google.golang.org/grpc/xds/internal/client/v2" // Register the v2 xDS API client.
+	_ "github.com/CSCI-2390-Project/grpc-go/xds/internal/client/v2" // Register the v2 xDS API client.
 )
 
 const (

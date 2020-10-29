@@ -34,11 +34,11 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	credinternal "google.golang.org/grpc/internal/credentials"
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/attributes"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	credinternal "github.com/CSCI-2390-Project/grpc-go/internal/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 )
 
 // ClientOptions contains parameters to configure a new client-side xDS

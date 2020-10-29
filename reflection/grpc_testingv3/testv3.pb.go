@@ -21,7 +21,7 @@ import math "math"
 import (
 	context "context"
 
-	grpc "google.golang.org/grpc"
+	grpc "github.com/CSCI-2390-Project/grpc-go"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

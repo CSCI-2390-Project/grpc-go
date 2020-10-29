@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils/fakeclient"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/testutils"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 	"google.golang.org/protobuf/proto"
 )
 

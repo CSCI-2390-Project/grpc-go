@@ -4,9 +4,9 @@ package grpc_gcp
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/CSCI-2390-Project/grpc-go"
+	codes "github.com/CSCI-2390-Project/grpc-go/codes"
+	status "github.com/CSCI-2390-Project/grpc-go/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -15,7 +15,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 // HandshakerServiceClient is the client API for HandshakerService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/CSCI-2390-Project/grpc-go/?tab=doc#ClientConn.NewStream.
 type HandshakerServiceClient interface {
 	// Handshaker service accepts a stream of handshaker request, returning a
 	// stream of handshaker response. Client is expected to send exactly one

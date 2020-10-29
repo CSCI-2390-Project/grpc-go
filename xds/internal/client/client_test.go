@@ -27,12 +27,12 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/version"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/bootstrap"
+	xdstestutils "github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
 )
 
 type s struct {

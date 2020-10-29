@@ -28,13 +28,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/metadata"
+	"github.com/CSCI-2390-Project/grpc-go/stats"
+	testpb "github.com/CSCI-2390-Project/grpc-go/stats/grpc_testing"
+	"github.com/CSCI-2390-Project/grpc-go/status"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/stats"
-	testpb "google.golang.org/grpc/stats/grpc_testing"
-	"google.golang.org/grpc/status"
 )
 
 type s struct {

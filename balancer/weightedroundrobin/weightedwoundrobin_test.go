@@ -21,9 +21,9 @@ package weightedroundrobin
 import (
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/attributes"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/resolver"
 )
 
 func TestAddrInfoToAndFromAttributes(t *testing.T) {

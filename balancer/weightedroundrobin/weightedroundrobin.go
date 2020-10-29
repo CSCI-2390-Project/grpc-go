@@ -20,7 +20,7 @@
 package weightedroundrobin
 
 import (
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 )
 
 // Name is the name of weighted_round_robin balancer.
