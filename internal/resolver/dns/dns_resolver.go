@@ -32,10 +32,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/envconfig"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpcrand"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 )

@@ -26,10 +26,10 @@ import (
 	"net"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/testutils"
 	"google.golang.org/grpc/status"
 
 	discoverypb "github.com/envoyproxy/go-control-plane/envoy/api/v2"

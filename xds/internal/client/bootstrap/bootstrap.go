@@ -27,6 +27,7 @@ import (
 	"io/ioutil"
 	"os"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/golang/protobuf/jsonpb"
@@ -34,7 +35,6 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/google"
 	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
 	"google.golang.org/grpc/xds/internal/version"
 )
 

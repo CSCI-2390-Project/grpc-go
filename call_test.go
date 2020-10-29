@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/transport"
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/transport"
 	"google.golang.org/grpc/status"
 )
 

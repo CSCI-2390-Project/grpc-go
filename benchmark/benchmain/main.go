@@ -57,6 +57,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
 	"google.golang.org/grpc"
 	bm "google.golang.org/grpc/benchmark"
 	"google.golang.org/grpc/benchmark/flags"
@@ -64,7 +65,6 @@ import (
 	"google.golang.org/grpc/benchmark/latency"
 	"google.golang.org/grpc/benchmark/stats"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/test/bufconn"
 )

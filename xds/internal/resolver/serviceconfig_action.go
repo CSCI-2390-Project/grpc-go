@@ -24,7 +24,7 @@ import (
 	"sort"
 	"strconv"
 
-	"google.golang.org/grpc/internal/grpcrand"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 

@@ -36,11 +36,11 @@ import (
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/uuid"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/tls/certprovider"
 	meshgrpc "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
 	meshpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	"google.golang.org/grpc/internal/grpclog"
 	"google.golang.org/grpc/metadata"
 )
 

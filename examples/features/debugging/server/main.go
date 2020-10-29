@@ -25,9 +25,9 @@ import (
 	"net"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/channelz/service"
-	"google.golang.org/grpc/internal/grpcrand"
 
 	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )

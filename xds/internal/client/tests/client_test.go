@@ -21,8 +21,8 @@ package tests_test
 import (
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/grpctest"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 	"google.golang.org/grpc/xds/internal/client/bootstrap"
 	_ "google.golang.org/grpc/xds/internal/client/v2" // Register the v2 API client.

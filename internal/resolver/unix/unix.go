@@ -20,7 +20,7 @@
 package unix
 
 import (
-	"google.golang.org/grpc/internal/transport/networktype"
+	"github.com/CSCI-2390-Project/grpc-go/internal/transport/networktype"
 	"google.golang.org/grpc/resolver"
 )
 

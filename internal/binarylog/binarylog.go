@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/grpcutil"
 )
 
 // Logger is the global binary logger. It can be used to get binary logger for

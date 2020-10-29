@@ -23,6 +23,7 @@ import (
 	"context"
 	"net"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
 	"github.com/golang/protobuf/ptypes"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
 	"google.golang.org/grpc"
@@ -32,7 +33,6 @@ import (
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
 	"google.golang.org/grpc/status"
 )
 

@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
 	testpb "google.golang.org/grpc/test/grpc_testing"
 )
 

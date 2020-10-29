@@ -23,13 +23,13 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/buffer"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/roundrobin"
 	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
 	"google.golang.org/grpc/serviceconfig"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 )

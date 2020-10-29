@@ -32,9 +32,9 @@ import (
 	"errors"
 	"sync"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/profiling"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/profiling"
 	ppb "google.golang.org/grpc/profiling/proto"
 )
 

@@ -35,9 +35,9 @@ import (
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
 	configpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
 )
 
 const (

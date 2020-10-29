@@ -27,9 +27,9 @@ import (
 	"net"
 	"strings"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"

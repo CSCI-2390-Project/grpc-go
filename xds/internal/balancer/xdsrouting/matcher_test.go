@@ -22,9 +22,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpcutil"
 	"google.golang.org/grpc/metadata"
 )
 

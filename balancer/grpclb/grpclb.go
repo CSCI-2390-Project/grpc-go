@@ -28,15 +28,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/resolver/dns"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/balancer"
 	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/resolver/dns"
 	"google.golang.org/grpc/resolver"
 
 	durationpb "github.com/golang/protobuf/ptypes/duration"

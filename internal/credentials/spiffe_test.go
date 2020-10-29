@@ -26,7 +26,7 @@ import (
 	"net/url"
 	"testing"
 
-	"google.golang.org/grpc/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"google.golang.org/grpc/testdata"
 )
 

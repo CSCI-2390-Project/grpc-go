@@ -18,10 +18,10 @@
 package orca
 
 import (
+	"github.com/CSCI-2390-Project/grpc-go/internal/balancerload"
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/balancerload"
 	"google.golang.org/grpc/metadata"
 )
 

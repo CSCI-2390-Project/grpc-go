@@ -26,10 +26,10 @@ import (
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
 	"google.golang.org/grpc/xds/internal/client/load"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/cache"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
 	"google.golang.org/grpc/resolver"
 )
 

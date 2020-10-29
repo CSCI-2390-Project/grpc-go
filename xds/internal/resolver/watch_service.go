@@ -23,7 +23,7 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/grpc/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 

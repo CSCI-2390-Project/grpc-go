@@ -32,13 +32,13 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/grpcutil"
 	"google.golang.org/grpc/status"
 )
 

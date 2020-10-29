@@ -34,7 +34,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	anypb "github.com/golang/protobuf/ptypes/any"
 
-	"google.golang.org/grpc/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"google.golang.org/grpc/xds/internal"
 	"google.golang.org/grpc/xds/internal/version"
 )

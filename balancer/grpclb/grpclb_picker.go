@@ -22,10 +22,10 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	"google.golang.org/grpc/balancer"
 	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpcrand"
 	"google.golang.org/grpc/status"
 )
 

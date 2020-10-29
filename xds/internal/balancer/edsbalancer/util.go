@@ -17,7 +17,7 @@
 package edsbalancer
 
 import (
-	"google.golang.org/grpc/internal/wrr"
+	"github.com/CSCI-2390-Project/grpc-go/internal/wrr"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 

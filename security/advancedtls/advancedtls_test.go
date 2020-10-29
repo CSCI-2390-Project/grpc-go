@@ -28,10 +28,10 @@ import (
 	"net"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal/grpctest"
 	"google.golang.org/grpc/security/advancedtls/internal/testutils"
 )
 

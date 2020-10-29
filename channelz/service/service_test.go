@@ -27,13 +27,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
 )
 
 func init() {

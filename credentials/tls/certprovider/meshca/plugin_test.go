@@ -37,12 +37,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/tls/certprovider"
 	configpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
 	meshgrpc "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
 	meshpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	"google.golang.org/grpc/internal/testutils"
 )
 
 const (

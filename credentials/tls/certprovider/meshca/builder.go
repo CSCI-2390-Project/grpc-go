@@ -26,11 +26,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/sts"
 	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal/backoff"
 )
 
 const pluginName = "mesh_ca"

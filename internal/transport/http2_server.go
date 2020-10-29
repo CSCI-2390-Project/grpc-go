@@ -31,15 +31,15 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/internal/grpcutil"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcrand"
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/peer"

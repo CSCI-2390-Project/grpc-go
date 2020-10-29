@@ -21,7 +21,7 @@ package weightedtarget
 import (
 	"encoding/json"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
+	internalserviceconfig "github.com/CSCI-2390-Project/grpc-go/internal/serviceconfig"
 	"google.golang.org/grpc/serviceconfig"
 )
 

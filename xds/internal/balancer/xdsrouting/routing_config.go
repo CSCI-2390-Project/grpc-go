@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	"fmt"
 
+	internalserviceconfig "github.com/CSCI-2390-Project/grpc-go/internal/serviceconfig"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
 	"google.golang.org/grpc/serviceconfig"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 )

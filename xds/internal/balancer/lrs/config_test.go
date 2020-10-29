@@ -21,9 +21,9 @@ package lrs
 import (
 	"testing"
 
+	internalserviceconfig "github.com/CSCI-2390-Project/grpc-go/internal/serviceconfig"
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/grpc/balancer/roundrobin"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
 	xdsinternal "google.golang.org/grpc/xds/internal"
 )
 

@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/attributes"
 	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/grpclog"
 	xdsinternal "google.golang.org/grpc/xds/internal"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 	"google.golang.org/grpc/xds/internal/client/bootstrap"

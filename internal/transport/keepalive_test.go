@@ -29,8 +29,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/syscall"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc/internal/syscall"
 	"google.golang.org/grpc/keepalive"
 )
 

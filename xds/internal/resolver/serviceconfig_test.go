@@ -21,9 +21,9 @@ package resolver
 import (
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpcrand"
 	"google.golang.org/grpc/serviceconfig"
 	_ "google.golang.org/grpc/xds/internal/balancer/weightedtarget"
 	_ "google.golang.org/grpc/xds/internal/balancer/xdsrouting"

@@ -31,10 +31,10 @@ import (
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	"github.com/google/go-cmp/cmp"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/google"
 	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
 	"google.golang.org/grpc/xds/internal/version"
 )
 

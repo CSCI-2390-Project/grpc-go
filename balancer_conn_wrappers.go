@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/buffer"
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
 	"google.golang.org/grpc/resolver"
 )
 

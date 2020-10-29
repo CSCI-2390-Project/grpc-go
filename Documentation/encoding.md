@@ -29,7 +29,7 @@ func init() {
 ```
 
 For an example, gRPC's implementation of the `proto` codec can be found in
-[`encoding/proto`](https://godoc.org/google.golang.org/grpc/encoding/proto).
+[`encoding/proto`](https://godoc.org/github.com/CSCI-2390-Project/grpc-go/encoding/proto).
 
 ### Using a `Codec`
 

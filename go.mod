@@ -4,7 +4,7 @@ go 1.11
 
 require (
 	cloud.google.com/go v0.70.0 // indirect
-	github.com/CSCI-2390-Project/privacy-go v1.0.3
+	github.com/CSCI-2390-Project/privacy-go v1.0.6
 	github.com/census-instrumentation/opencensus-proto v0.3.0 // indirect
 	github.com/cncf/udpa/go v0.0.0-20201001150855-7e6fe0510fb5
 	github.com/envoyproxy/go-control-plane v0.9.7
@@ -18,6 +18,7 @@ require (
 	golang.org/x/sys v0.0.0-20201029080932-201ba4db2418
 	golang.org/x/text v0.3.4 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20201028140639-c77dae4b0522
+	google.golang.org/genproto v0.0.0-20201029200359-8ce4113da6f7
+	google.golang.org/grpc v1.33.1
 	google.golang.org/protobuf v1.25.0
 )

@@ -26,12 +26,12 @@ import (
 	"reflect"
 	"testing"
 
+	protoenc "github.com/CSCI-2390-Project/grpc-go/encoding/proto"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go/internal/transport"
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/encoding"
-	protoenc "google.golang.org/grpc/encoding/proto"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/transport"
 	"google.golang.org/grpc/status"
 	perfpb "google.golang.org/grpc/test/codec_perf"
 )

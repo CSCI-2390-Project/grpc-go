@@ -23,8 +23,8 @@ package meshca
 import (
 	"fmt"
 
+	internalgrpclog "github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"google.golang.org/grpc/grpclog"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
 )
 
 const prefix = "[%p] "

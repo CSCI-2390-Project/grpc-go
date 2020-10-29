@@ -23,11 +23,11 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"github.com/golang/protobuf/proto"
 	statuspb "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpclog"
 	xdsclient "google.golang.org/grpc/xds/internal/client"
 	"google.golang.org/grpc/xds/internal/version"
 

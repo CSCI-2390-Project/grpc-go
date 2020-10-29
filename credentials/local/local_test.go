@@ -27,8 +27,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpctest"
 )
 
 type s struct {
