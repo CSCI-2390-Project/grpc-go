@@ -24,10 +24,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CSCI-2390-Project/grpc-go/credentials/insecure"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/status"
 	testpb "google.golang.org/grpc/test/grpc_testing"
