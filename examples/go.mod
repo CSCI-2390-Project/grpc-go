@@ -3,11 +3,14 @@ module google.golang.org/grpc/examples
 go 1.11
 
 require (
-	cloud.google.com/go v0.63.0 // indirect
-	github.com/golang/protobuf v1.4.2
-	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
-	google.golang.org/genproto v0.0.0-20200806141610-86f49bd18e98
-	google.golang.org/grpc v1.31.0
+	github.com/CSCI-2390-Project/protobuf-go v1.26.0 // indirect
+	github.com/golang/protobuf v1.4.3
+	golang.org/x/net v0.0.0-20201029055024-942e2f445f3c // indirect
+	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
+	golang.org/x/sys v0.0.0-20201029080932-201ba4db2418 // indirect
+	golang.org/x/text v0.3.4 // indirect
+	google.golang.org/genproto v0.0.0-20201028140639-c77dae4b0522
+	google.golang.org/grpc v1.33.1
 	google.golang.org/protobuf v1.25.0
 )
 

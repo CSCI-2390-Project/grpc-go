@@ -21,6 +21,7 @@
 package proto
 
 import (
+	privacy "github.com/CSCI-2390-Project/privacy-go"
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc/encoding"
 )
@@ -36,11 +37,11 @@ func init() {
 type codec struct{}
 
 func (codec) Marshal(v interface{}) ([]byte, error) {
-	return proto.Marshal(v.(proto.Message))
+	return privacy.Marshal(proto.MessageV2(v.(proto.Message)))
 }
 
 func (codec) Unmarshal(data []byte, v interface{}) error {
-	return proto.Unmarshal(data, v.(proto.Message))
+	return privacy.Unmarshal(data, proto.MessageV2(v.(proto.Message)))
 }
 
 func (codec) Name() string {
