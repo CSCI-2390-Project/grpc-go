@@ -23,8 +23,8 @@ package glogger
 import (
 	"fmt"
 
+	"github.com/CSCI-2390-Project/grpc-go/grpclog"
 	"github.com/golang/glog"
-	"google.golang.org/grpc/grpclog"
 )
 
 const d = 2

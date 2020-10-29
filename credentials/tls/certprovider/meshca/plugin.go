@@ -36,12 +36,12 @@ import (
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/uuid"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	meshgrpc "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	meshpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/metadata"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	meshgrpc "github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider/meshca/internal/v1"
+	meshpb "github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider/meshca/internal/v1"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/metadata"
 )
 
 // In requests sent to the MeshCA, we add a metadata header with this key and

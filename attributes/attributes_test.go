@@ -21,7 +21,7 @@ package attributes_test
 import (
 	"fmt"
 
-	"google.golang.org/grpc/attributes"
+	"github.com/CSCI-2390-Project/grpc-go/attributes"
 )
 
 func ExampleAttributes() {

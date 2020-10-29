@@ -22,10 +22,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	internalserviceconfig "github.com/CSCI-2390-Project/grpc-go/internal/serviceconfig"
+	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 
 type actionConfig struct {

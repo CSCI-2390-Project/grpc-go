@@ -1,4 +1,4 @@
-module google.golang.org/grpc/cmd/protoc-gen-go-grpc
+module github.com/CSCI-2390-Project/grpc-go/cmd/protoc-gen-go-grpc
 
 go 1.9
 

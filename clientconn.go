@@ -29,25 +29,25 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"github.com/CSCI-2390-Project/grpc-go/balancer"
+	"github.com/CSCI-2390-Project/grpc-go/balancer/base"
+	"github.com/CSCI-2390-Project/grpc-go/codes"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/credentials"
+	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"
+	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcsync"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
+	"github.com/CSCI-2390-Project/grpc-go/internal/transport"
+	"github.com/CSCI-2390-Project/grpc-go/keepalive"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
+	"github.com/CSCI-2390-Project/grpc-go/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
-	_ "google.golang.org/grpc/internal/resolver/unix"        // To register unix resolver.
+	_ "github.com/CSCI-2390-Project/grpc-go/balancer/roundrobin"           // To register roundrobin.
+	_ "github.com/CSCI-2390-Project/grpc-go/internal/resolver/dns"         // To register dns resolver.
+	_ "github.com/CSCI-2390-Project/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "github.com/CSCI-2390-Project/grpc-go/internal/resolver/unix"        // To register unix resolver.
 )
 
 const (

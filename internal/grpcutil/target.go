@@ -23,7 +23,7 @@ package grpcutil
 import (
 	"strings"
 
-	"google.golang.org/grpc/resolver"
+	"github.com/CSCI-2390-Project/grpc-go/resolver"
 )
 
 // split2 returns the values from strings.SplitN(s, sep, 2).

@@ -21,8 +21,8 @@
 package service
 
 import (
+	channelzpb "github.com/CSCI-2390-Project/grpc-go/channelz/grpc_channelz_v1"
 	"golang.org/x/sys/unix"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
 )
 
 func protoToTime(protoTime *channelzpb.SocketOptionTimeout) *unix.Timeval {

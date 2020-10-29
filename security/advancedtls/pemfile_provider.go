@@ -26,8 +26,8 @@ import (
 	"io/ioutil"
 	"time"
 
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/grpclog"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	"github.com/CSCI-2390-Project/grpc-go/grpclog"
 )
 
 const defaultIdentityInterval = 1 * time.Hour

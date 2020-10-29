@@ -21,6 +21,10 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/codes"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
+	"github.com/CSCI-2390-Project/grpc-go/peer"
+	"github.com/CSCI-2390-Project/grpc-go/status"
 	pb "github.com/envoyproxy/go-control-plane/envoy/config/rbac/v2"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/checker/decls"
@@ -29,10 +33,6 @@ import (
 	"github.com/google/cel-go/interpreter"
 	"github.com/google/go-cmp/cmp"
 	expr "google.golang.org/genproto/googleapis/api/expr/v1alpha1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
 )
 
 type s struct {

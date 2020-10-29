@@ -27,10 +27,10 @@ import (
 	"os"
 	"strconv"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/metadata"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/grpclog"
+	testpb "github.com/CSCI-2390-Project/grpc-go/interop/grpc_testing"
+	"github.com/CSCI-2390-Project/grpc-go/metadata"
 )
 
 var (

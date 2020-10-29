@@ -27,10 +27,10 @@ import (
 	"log"
 	"time"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/security/advancedtls"
-	"google.golang.org/grpc/security/advancedtls/testdata"
+	"github.com/CSCI-2390-Project/grpc-go"
+	pb "github.com/CSCI-2390-Project/grpc-go/examples/helloworld/helloworld"
+	"github.com/CSCI-2390-Project/grpc-go/security/advancedtls"
+	"github.com/CSCI-2390-Project/grpc-go/security/advancedtls/testdata"
 )
 
 var address = "localhost:50051"

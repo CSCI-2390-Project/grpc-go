@@ -27,11 +27,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	configpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/CSCI-2390-Project/grpc-go"
+	"github.com/CSCI-2390-Project/grpc-go/connectivity"
+	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
+	configpb "github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider/meshca/internal/meshca_experimental"
+	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
 )
 
 func overrideHTTPFuncs() func() {

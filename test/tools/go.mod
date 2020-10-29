@@ -1,4 +1,4 @@
-module google.golang.org/grpc/test/tools
+module github.com/CSCI-2390-Project/grpc-go/test/tools
 
 go 1.11
 

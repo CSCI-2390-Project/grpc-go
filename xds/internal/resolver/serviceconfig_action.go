@@ -24,8 +24,8 @@ import (
 	"sort"
 	"strconv"
 
-	"google.golang.org/grpc/internal/grpcrand"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpcrand"
+	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 )
 
 type actionWithAssignedName struct {

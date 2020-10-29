@@ -26,9 +26,9 @@ import (
 	"log"
 	"net"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	profsvc "google.golang.org/grpc/profiling/service"
+	"github.com/CSCI-2390-Project/grpc-go"
+	pb "github.com/CSCI-2390-Project/grpc-go/examples/features/proto/echo"
+	profsvc "github.com/CSCI-2390-Project/grpc-go/profiling/service"
 )
 
 var port = flag.Int("port", 50051, "the port to serve on")

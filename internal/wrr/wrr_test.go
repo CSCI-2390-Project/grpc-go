@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/grpctest"
 )
 
 type s struct {
