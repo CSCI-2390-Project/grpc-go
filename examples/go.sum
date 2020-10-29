@@ -41,6 +41,8 @@ github.com/CSCI-2390-Project/privacy-go v1.0.1 h1:/hl0d1UNkhHecthPmva2GgJUozbISH
 github.com/CSCI-2390-Project/privacy-go v1.0.1/go.mod h1:yCnb7LXxBFfuGh0ix6FcUGeI2FzcFoZArl648Bt5IqU=
 github.com/CSCI-2390-Project/privacy-go v1.0.3 h1:oSVT/yTZ86JHfOPIu+0yyhSa3PVgb/6DesB2l66i8JE=
 github.com/CSCI-2390-Project/privacy-go v1.0.3/go.mod h1:yCnb7LXxBFfuGh0ix6FcUGeI2FzcFoZArl648Bt5IqU=
+github.com/CSCI-2390-Project/privacy-go v1.0.6 h1:o4rsW4aAErAGgLenfWHgjfC5uu6iNXBJT1JHo4HuNDc=
+github.com/CSCI-2390-Project/privacy-go v1.0.6/go.mod h1:yCnb7LXxBFfuGh0ix6FcUGeI2FzcFoZArl648Bt5IqU=
 github.com/CSCI-2390-Project/protobuf-go v1.26.0 h1:n98Te043dSwm9rBaBP4xLWWxaZ74TQGukOAjC7qr9pg=
 github.com/CSCI-2390-Project/protobuf-go v1.26.0/go.mod h1:YnlVqHsUgRvQY4Xz7GAxR1M/wklzEWleL0oZbO/Soks=
 github.com/census-instrumentation/opencensus-proto v0.2.1 h1:glEXhBS5PSLLv4IXzLA5yPRVX4bilULVyxxbrfOtDAk=
@@ -381,6 +383,8 @@ google.golang.org/genproto v0.0.0-20200904004341-0bd0a958aa1d/go.mod h1:FWY/as6D
 google.golang.org/genproto v0.0.0-20201019141844-1ed22bb0c154/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
 google.golang.org/genproto v0.0.0-20201028140639-c77dae4b0522 h1:7RoRaOmOAXwqnurgQ5g5/d0yCi9ha2UxuTZULXudK7A=
 google.golang.org/genproto v0.0.0-20201028140639-c77dae4b0522/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
+google.golang.org/genproto v0.0.0-20201029200359-8ce4113da6f7 h1:2BaavIGjmdbQJl0IFOYI8SBd5WLIjH+tIOMIFf9QENo=
+google.golang.org/genproto v0.0.0-20201029200359-8ce4113da6f7/go.mod h1:FWY/as6DDZQgahTzZj3fqbO1CbirC29ZNUFHwi0/+no=
 google.golang.org/protobuf v0.0.0-20200109180630-ec00e32a8dfd/go.mod h1:DFci5gLYBciE7Vtevhsrf46CRTquxDuWsQurQQe4oz8=
 google.golang.org/protobuf v0.0.0-20200221191635-4d8936d0db64/go.mod h1:kwYJMbMJ01Woi6D6+Kah6886xMZcty6N08ah7+eCXa0=
 google.golang.org/protobuf v0.0.0-20200228230310-ab0ca4ff8a60/go.mod h1:cfTl7dwQJ+fmap5saPgwCLgHXTUD7jkjRqWcaiX5VyM=
