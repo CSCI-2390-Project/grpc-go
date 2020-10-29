@@ -3,6 +3,7 @@ module google.golang.org/grpc/examples
 go 1.11
 
 require (
+	github.com/CSCI-2390-Project/privacy-go v1.0.3
 	github.com/CSCI-2390-Project/protobuf-go v1.26.0 // indirect
 	github.com/golang/protobuf v1.4.3
 	golang.org/x/net v0.0.0-20201029055024-942e2f445f3c // indirect
