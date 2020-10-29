@@ -3,7 +3,7 @@ module github.com/CSCI-2390-Project/grpc-go/examples
 go 1.11
 
 require (
-	github.com/CSCI-2390-Project/grpc-go v1.33.1
+	github.com/CSCI-2390-Project/grpc-go v1.36.0
 	github.com/CSCI-2390-Project/privacy-go v1.0.6
 	github.com/golang/protobuf v1.4.3
 	golang.org/x/net v0.0.0-20201029221708-28c70e62bb1d // indirect
