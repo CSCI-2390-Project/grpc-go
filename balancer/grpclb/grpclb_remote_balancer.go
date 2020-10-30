@@ -35,8 +35,8 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/keepalive"
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	"github.com/CSCI-2390-Project/grpc-go/resolver"
-	"github.com/golang/protobuf/proto"
-	timestamppb "github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	timestamppb "github.com/CSCI-2390-Project/protobuf/ptypes/timestamp"
 	"github.com/google/go-cmp/cmp"
 )
 

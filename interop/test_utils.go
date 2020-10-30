@@ -33,7 +33,7 @@ import (
 	testpb "github.com/CSCI-2390-Project/grpc-go/interop/grpc_testing"
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 )

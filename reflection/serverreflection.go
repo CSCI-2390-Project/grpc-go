@@ -50,8 +50,8 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/codes"
 	rpb "github.com/CSCI-2390-Project/grpc-go/reflection/grpc_reflection_v1alpha"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
-	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	dpb "github.com/CSCI-2390-Project/protobuf/protoc-gen-go/descriptor"
 )
 
 type serverReflectionServer struct {

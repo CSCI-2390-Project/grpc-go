@@ -40,7 +40,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/resolver"
 
 	lbpb "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/grpc_lb_v1"
-	durationpb "github.com/golang/protobuf/ptypes/duration"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 )
 
 const (

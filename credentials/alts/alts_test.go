@@ -26,7 +26,7 @@ import (
 
 	altspb "github.com/CSCI-2390-Project/grpc-go/credentials/alts/internal/proto/grpc_gcp"
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 type s struct {

@@ -32,8 +32,8 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/grpclog"
 	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/ptypes"
-	wrpb "github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
+	wrpb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 )
 
 func init() {

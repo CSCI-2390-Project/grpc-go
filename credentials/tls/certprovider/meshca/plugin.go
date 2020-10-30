@@ -33,7 +33,7 @@ import (
 	"fmt"
 	"time"
 
-	durationpb "github.com/golang/protobuf/ptypes/duration"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	"github.com/google/uuid"
 
 	"github.com/CSCI-2390-Project/grpc-go"

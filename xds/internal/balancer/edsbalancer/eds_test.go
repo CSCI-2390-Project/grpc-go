@@ -27,8 +27,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/jsonpb"
-	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/CSCI-2390-Project/protobuf/jsonpb"
+	wrapperspb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 
 	"github.com/CSCI-2390-Project/grpc-go"

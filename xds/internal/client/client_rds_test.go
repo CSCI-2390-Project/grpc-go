@@ -22,6 +22,9 @@ import (
 	"testing"
 
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
+	wrapperspb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	v2routepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/route"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
@@ -29,9 +32,6 @@ import (
 	v3routepb "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
-	"github.com/golang/protobuf/proto"
-	anypb "github.com/golang/protobuf/ptypes/any"
-	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 )

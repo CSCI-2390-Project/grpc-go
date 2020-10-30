@@ -31,8 +31,8 @@ import (
 	rpb "github.com/CSCI-2390-Project/grpc-go/reflection/grpc_reflection_v1alpha"
 	pb "github.com/CSCI-2390-Project/grpc-go/reflection/grpc_testing"
 	pbv3 "github.com/CSCI-2390-Project/grpc-go/reflection/grpc_testingv3"
-	"github.com/golang/protobuf/proto"
-	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	dpb "github.com/CSCI-2390-Project/protobuf/protoc-gen-go/descriptor"
 )
 
 var (

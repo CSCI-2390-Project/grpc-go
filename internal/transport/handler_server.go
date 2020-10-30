@@ -42,7 +42,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/peer"
 	"github.com/CSCI-2390-Project/grpc-go/stats"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	"golang.org/x/net/http2"
 )
 

@@ -32,8 +32,8 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/credentials"
 	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
 )
 
 func init() {

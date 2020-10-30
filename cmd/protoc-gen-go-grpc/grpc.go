@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"google.golang.org/protobuf/compiler/protogen"
+	"github.com/CSCI-2390-Project/protobuf-go/compiler/protogen"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/CSCI-2390-Project/protobuf-go/types/descriptorpb"
 )
 
 const (

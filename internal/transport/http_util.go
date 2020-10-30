@@ -36,7 +36,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/grpclog"
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 	spb "google.golang.org/genproto/googleapis/rpc/status"

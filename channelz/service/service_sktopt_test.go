@@ -33,8 +33,8 @@ import (
 
 	channelzpb "github.com/CSCI-2390-Project/grpc-go/channelz/grpc_channelz_v1"
 	"github.com/CSCI-2390-Project/grpc-go/internal/channelz"
-	"github.com/golang/protobuf/ptypes"
-	durpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
+	durpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	"golang.org/x/sys/unix"
 )
 

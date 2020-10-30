@@ -32,8 +32,8 @@ import (
 	"fmt"
 
 	"github.com/CSCI-2390-Project/grpc-go/codes"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
 )
 

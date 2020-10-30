@@ -26,7 +26,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"github.com/CSCI-2390-Project/grpc-go/status"
 	"github.com/CSCI-2390-Project/grpc-go/test/grpc_testing"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 type s struct {

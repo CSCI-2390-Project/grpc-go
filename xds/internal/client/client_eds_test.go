@@ -26,12 +26,12 @@ import (
 
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
+	wrapperspb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
-	"github.com/golang/protobuf/proto"
-	anypb "github.com/golang/protobuf/ptypes/any"
-	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 )

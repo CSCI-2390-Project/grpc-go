@@ -30,9 +30,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CSCI-2390-Project/protobuf/jsonpb"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	"github.com/golang/protobuf/jsonpb"
-	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
 
 	configpb "github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider/meshca/internal/meshca_experimental"

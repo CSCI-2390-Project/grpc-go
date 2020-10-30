@@ -34,8 +34,8 @@ import (
 	"flag"
 	"fmt"
 
-	"google.golang.org/protobuf/compiler/protogen"
-	"google.golang.org/protobuf/types/pluginpb"
+	"github.com/CSCI-2390-Project/protobuf-go/compiler/protogen"
+	"github.com/CSCI-2390-Project/protobuf-go/types/pluginpb"
 )
 
 const version = "1.0.1"

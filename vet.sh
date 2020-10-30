@@ -87,7 +87,7 @@ git grep -l '"math/rand"' -- "*.go" 2>&1 | not grep -v '^examples\|^stress\|grpc
 git grep -l 'grpclog.I\|grpclog.W\|grpclog.E\|grpclog.F\|grpclog.V' -- "*.go" | not grep -v '^grpclog/component.go\|^internal/grpctest/tlogger_test.go'
 
 # - Ensure all ptypes proto packages are renamed when importing.
-not git grep "\(import \|^\s*\)\"github.com/golang/protobuf/ptypes/" -- "*.go"
+not git grep "\(import \|^\s*\)\"github.com/CSCI-2390-Project/protobuf/ptypes/" -- "*.go"
 
 # - Ensure all xds proto imports are renamed to *pb or *grpc.
 git grep '"github.com/envoyproxy/go-control-plane/envoy' -- '*.go' ':(exclude)*.pb.go' | not grep -v 'pb "\|grpc "'
@@ -160,7 +160,7 @@ resolver.Backend
 resolver.GRPCLB
 extDesc.Filename is deprecated
 BuildVersion is deprecated
-github.com/golang/protobuf/jsonpb is deprecated
+github.com/CSCI-2390-Project/protobuf/jsonpb is deprecated
 proto is deprecated
 xxx_messageInfo_
 proto.InternalMessageInfo is deprecated

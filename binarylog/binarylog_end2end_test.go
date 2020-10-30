@@ -37,7 +37,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	testpb "github.com/CSCI-2390-Project/grpc-go/stats/grpc_testing"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 var grpclogLogger = grpclog.Component("binarylog")

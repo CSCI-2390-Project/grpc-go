@@ -23,7 +23,7 @@ package proto
 import (
 	"github.com/CSCI-2390-Project/grpc-go/encoding"
 	privacy "github.com/CSCI-2390-Project/privacy-go"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 // Name is the name registered for the proto compressor.

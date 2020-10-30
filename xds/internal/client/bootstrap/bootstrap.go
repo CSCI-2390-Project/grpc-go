@@ -32,10 +32,10 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider"
 	"github.com/CSCI-2390-Project/grpc-go/internal"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf/jsonpb"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
 )
 
 const (

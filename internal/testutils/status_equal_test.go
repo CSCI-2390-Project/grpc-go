@@ -24,7 +24,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/codes"
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpctest"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	anypb "github.com/golang/protobuf/ptypes/any"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
 )
 

@@ -40,7 +40,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/credentials"
 	"github.com/CSCI-2390-Project/grpc-go/examples/data"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 
 	pb "github.com/CSCI-2390-Project/grpc-go/examples/route_guide/routeguide"
 )

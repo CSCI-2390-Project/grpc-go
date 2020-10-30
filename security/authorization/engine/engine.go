@@ -24,13 +24,13 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/grpclog"
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	"github.com/CSCI-2390-Project/grpc-go/peer"
+	"github.com/CSCI-2390-Project/protobuf-go/proto"
 	pb "github.com/envoyproxy/go-control-plane/envoy/config/rbac/v2"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/checker/decls"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/interpreter"
 	expr "google.golang.org/genproto/googleapis/api/expr/v1alpha1"
-	"google.golang.org/protobuf/proto"
 )
 
 var logger = grpclog.Component("authorization")

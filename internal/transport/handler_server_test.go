@@ -34,8 +34,8 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/codes"
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
-	dpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	dpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
 )
 

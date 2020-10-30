@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
-	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
 
 	"github.com/CSCI-2390-Project/grpc-go"

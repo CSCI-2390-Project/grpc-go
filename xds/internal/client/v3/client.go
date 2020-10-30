@@ -28,7 +28,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	statuspb "google.golang.org/genproto/googleapis/rpc/status"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"

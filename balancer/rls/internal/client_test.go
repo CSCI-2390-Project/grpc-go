@@ -31,7 +31,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/codes"
 	"github.com/CSCI-2390-Project/grpc-go/internal/testutils"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
 )
 

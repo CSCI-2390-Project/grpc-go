@@ -21,8 +21,8 @@ package engine
 import (
 	"errors"
 
+	"github.com/CSCI-2390-Project/protobuf-go/proto"
 	expr "google.golang.org/genproto/googleapis/api/expr/v1alpha1"
-	"google.golang.org/protobuf/proto"
 
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/checker/decls"

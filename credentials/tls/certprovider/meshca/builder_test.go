@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 
 	"github.com/CSCI-2390-Project/grpc-go"
 	"github.com/CSCI-2390-Project/grpc-go/connectivity"

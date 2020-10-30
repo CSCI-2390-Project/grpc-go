@@ -30,9 +30,9 @@ import (
 	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils/fakeserver"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
-	"github.com/golang/protobuf/proto"
-	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
 )
 

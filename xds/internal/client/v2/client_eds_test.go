@@ -26,9 +26,9 @@ import (
 	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
-	"github.com/golang/protobuf/ptypes"
-	anypb "github.com/golang/protobuf/ptypes/any"
 )
 
 var (

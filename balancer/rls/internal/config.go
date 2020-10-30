@@ -30,9 +30,9 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
 	"github.com/CSCI-2390-Project/grpc-go/resolver"
 	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/ptypes"
-	durationpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/CSCI-2390-Project/protobuf/jsonpb"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 )
 
 const (

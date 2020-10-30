@@ -28,9 +28,9 @@ import (
 	"time"
 
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/load"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	"github.com/golang/protobuf/proto"
 
 	"github.com/CSCI-2390-Project/grpc-go"
 	"github.com/CSCI-2390-Project/grpc-go/internal/backoff"

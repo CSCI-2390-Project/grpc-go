@@ -25,7 +25,7 @@ import (
 	internalserviceconfig "github.com/CSCI-2390-Project/grpc-go/internal/serviceconfig"
 	"github.com/CSCI-2390-Project/grpc-go/serviceconfig"
 	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
-	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
+	wrapperspb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 )
 
 type actionConfig struct {

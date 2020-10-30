@@ -23,6 +23,8 @@ import (
 	"net"
 	"strconv"
 
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	anypb "github.com/CSCI-2390-Project/protobuf/ptypes/any"
 	v3clusterpb "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
@@ -31,8 +33,6 @@ import (
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	v3tlspb "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3"
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
-	"github.com/golang/protobuf/proto"
-	anypb "github.com/golang/protobuf/ptypes/any"
 
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpclog"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal"

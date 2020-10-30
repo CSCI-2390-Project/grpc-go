@@ -24,11 +24,11 @@
 package meshca_experimental
 
 import (
+	protoreflect "github.com/CSCI-2390-Project/protobuf-go/reflect/protoreflect"
+	protoimpl "github.com/CSCI-2390-Project/protobuf-go/runtime/protoimpl"
+	proto "github.com/CSCI-2390-Project/protobuf/proto"
+	duration "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	v3 "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	proto "github.com/golang/protobuf/proto"
-	duration "github.com/golang/protobuf/ptypes/duration"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 )

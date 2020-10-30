@@ -32,9 +32,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/CSCI-2390-Project/protobuf/jsonpb"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/ptypes"
 
 	"github.com/CSCI-2390-Project/grpc-go/credentials/sts"
 	configpb "github.com/CSCI-2390-Project/grpc-go/credentials/tls/certprovider/meshca/internal/meshca_experimental"

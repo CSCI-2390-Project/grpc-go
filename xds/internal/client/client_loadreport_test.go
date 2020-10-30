@@ -31,12 +31,12 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/client/bootstrap"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/testutils/fakeserver"
 	"github.com/CSCI-2390-Project/grpc-go/xds/internal/version"
+	"github.com/CSCI-2390-Project/protobuf-go/testing/protocmp"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	lrspb "github.com/envoyproxy/go-control-plane/envoy/service/load_stats/v2"
-	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/protobuf/testing/protocmp"
 
 	_ "github.com/CSCI-2390-Project/grpc-go/xds/internal/client/v2" // Register the v2 xDS API client.
 )

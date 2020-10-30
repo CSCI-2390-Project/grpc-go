@@ -25,10 +25,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	structpb "github.com/CSCI-2390-Project/protobuf/ptypes/struct"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	"github.com/golang/protobuf/proto"
-	structpb "github.com/golang/protobuf/ptypes/struct"
 	"github.com/google/go-cmp/cmp"
 
 	"github.com/CSCI-2390-Project/grpc-go"

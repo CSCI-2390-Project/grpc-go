@@ -31,12 +31,12 @@
 package grpc_service_config
 
 import (
-	proto "github.com/golang/protobuf/proto"
-	duration "github.com/golang/protobuf/ptypes/duration"
-	wrappers "github.com/golang/protobuf/ptypes/wrappers"
+	protoreflect "github.com/CSCI-2390-Project/protobuf-go/reflect/protoreflect"
+	protoimpl "github.com/CSCI-2390-Project/protobuf-go/runtime/protoimpl"
+	proto "github.com/CSCI-2390-Project/protobuf/proto"
+	duration "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
+	wrappers "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 	code "google.golang.org/genproto/googleapis/rpc/code"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 )

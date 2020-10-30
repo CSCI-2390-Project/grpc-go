@@ -27,8 +27,8 @@ import (
 	pb "github.com/CSCI-2390-Project/grpc-go/binarylog/grpc_binarylog_v1"
 	"github.com/CSCI-2390-Project/grpc-go/metadata"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/ptypes"
 )
 
 type callIDGenerator struct {

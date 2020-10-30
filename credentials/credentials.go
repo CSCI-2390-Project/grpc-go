@@ -30,7 +30,7 @@ import (
 
 	"github.com/CSCI-2390-Project/grpc-go/attributes"
 	"github.com/CSCI-2390-Project/grpc-go/internal"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 // PerRPCCredentials defines the common interface for the credentials which need to

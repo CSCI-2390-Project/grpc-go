@@ -28,8 +28,8 @@ import (
 	pb "github.com/CSCI-2390-Project/grpc-go/binarylog/grpc_binarylog_v1"
 	"github.com/CSCI-2390-Project/grpc-go/codes"
 	"github.com/CSCI-2390-Project/grpc-go/status"
-	"github.com/golang/protobuf/proto"
-	dpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/CSCI-2390-Project/protobuf/proto"
+	dpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 )
 
 func (s) TestLog(t *testing.T) {

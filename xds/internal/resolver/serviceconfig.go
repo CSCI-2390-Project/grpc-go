@@ -23,7 +23,7 @@ import (
 	"fmt"
 
 	xdsclient "github.com/CSCI-2390-Project/grpc-go/xds/internal/client"
-	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
+	wrapperspb "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 )
 
 const (

@@ -33,7 +33,7 @@ import (
 	"github.com/CSCI-2390-Project/grpc-go/internal/transport"
 	"github.com/CSCI-2390-Project/grpc-go/status"
 	perfpb "github.com/CSCI-2390-Project/grpc-go/test/codec_perf"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 )
 
 type fullReader struct {

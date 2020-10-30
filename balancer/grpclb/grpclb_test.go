@@ -46,7 +46,7 @@ import (
 	lbgrpc "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/grpc_lb_v1"
 	lbpb "github.com/CSCI-2390-Project/grpc-go/balancer/grpclb/grpc_lb_v1"
 	testpb "github.com/CSCI-2390-Project/grpc-go/test/grpc_testing"
-	durationpb "github.com/golang/protobuf/ptypes/duration"
+	durationpb "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
 )
 
 var (

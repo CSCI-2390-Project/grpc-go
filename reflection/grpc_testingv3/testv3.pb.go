@@ -14,7 +14,7 @@ It has these top-level messages:
 */
 package grpc_testingv3
 
-import proto "github.com/golang/protobuf/proto"
+import proto "github.com/CSCI-2390-Project/protobuf/proto"
 import fmt "fmt"
 import math "math"
 

@@ -32,7 +32,7 @@ import (
 	"time"
 
 	"github.com/CSCI-2390-Project/grpc-go/internal/grpcutil"
-	"github.com/golang/protobuf/proto"
+	"github.com/CSCI-2390-Project/protobuf/proto"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 

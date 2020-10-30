@@ -28,13 +28,13 @@
 package grpc_channelz_v1
 
 import (
-	proto "github.com/golang/protobuf/proto"
-	any "github.com/golang/protobuf/ptypes/any"
-	duration "github.com/golang/protobuf/ptypes/duration"
-	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	wrappers "github.com/golang/protobuf/ptypes/wrappers"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	protoreflect "github.com/CSCI-2390-Project/protobuf-go/reflect/protoreflect"
+	protoimpl "github.com/CSCI-2390-Project/protobuf-go/runtime/protoimpl"
+	proto "github.com/CSCI-2390-Project/protobuf/proto"
+	any "github.com/CSCI-2390-Project/protobuf/ptypes/any"
+	duration "github.com/CSCI-2390-Project/protobuf/ptypes/duration"
+	timestamp "github.com/CSCI-2390-Project/protobuf/ptypes/timestamp"
+	wrappers "github.com/CSCI-2390-Project/protobuf/ptypes/wrappers"
 	reflect "reflect"
 	sync "sync"
 )
