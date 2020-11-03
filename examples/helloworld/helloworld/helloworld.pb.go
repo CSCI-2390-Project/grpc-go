@@ -81,7 +81,7 @@ func (*HelloRequest) Descriptor() ([]byte, []int) {
 
 func (x *HelloRequest) GetName() string {
 	if x != nil {
-		return privacy_go.PermissionedDecrypt(x.Name)
+		return privacy_go.PermissionedDecrypt("HelloRequest", "Name", x.Name)
 	}
 	return ""
 }
@@ -131,7 +131,7 @@ func (*HelloReply) Descriptor() ([]byte, []int) {
 
 func (x *HelloReply) GetMessage() string {
 	if x != nil {
-		return privacy_go.PermissionedDecrypt(x.Message)
+		return privacy_go.PermissionedDecrypt("HelloReply", "Message", x.Message)
 	}
 	return ""
 }

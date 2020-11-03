@@ -1,0 +1,11 @@
+{
+  "Policies": [
+    {
+      "Message": "HelloRequest",
+      "Field": "Name",
+      "Conditions": {
+        "Copying": []
+      }
+    }
+  ]
+}

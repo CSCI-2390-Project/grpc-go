@@ -3,7 +3,7 @@ module google.golang.org/grpc/examples
 go 1.11
 
 require (
-	github.com/CSCI-2390-Project/privacy-go v1.0.8
+	github.com/CSCI-2390-Project/privacy-go v1.0.9
 	github.com/golang/protobuf v1.4.3
 	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
 	google.golang.org/genproto v0.0.0-20201029200359-8ce4113da6f7
@@ -13,4 +13,4 @@ require (
 
 replace google.golang.org/grpc => github.com/CSCI-2390-Project/grpc-go v1.36.1-0.20201029210533-f22495f2c83c
 
-replace google.golang.org/protobuf => github.com/CSCI-2390-Project/protobuf-go v1.25.1-0.20201029202626-b6c08e03c161
+replace google.golang.org/protobuf => github.com/CSCI-2390-Project/protobuf-go v1.25.1-0.20201103164251-ba3a6e05f287
