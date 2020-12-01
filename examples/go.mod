@@ -12,6 +12,6 @@ require (
 	google.golang.org/protobuf v1.25.0
 )
 
-replace google.golang.org/grpc => github.com/CSCI-2390-Project/grpc-go v1.99.2
+replace google.golang.org/grpc => github.com/CSCI-2390-Project/grpc-go v1.99.3
 
 replace google.golang.org/protobuf => github.com/CSCI-2390-Project/protobuf-go v1.99.1

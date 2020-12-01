@@ -504,11 +504,12 @@ func (s *Server) stopServerWorkers() {
 }
 
 func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) {
-
+	log.Debugf("unaryPrivacyInterceptor was invoked")
 	intercept_policies := privacy.ExportContextPolicies()
 	if policy, ok := intercept_policies[info.FullMethod]; ok {
 
 		md, ok := metadata.FromIncomingContext(ctx)
+		log.Debugf("Metadata was received: %+v", md)
 		if len(policy) != 0 && ok {
 			return nil, status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expecting %+v", policy)
 		}
@@ -538,16 +539,18 @@ func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnarySe
 }
 
 func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamServerInfo, handler StreamHandler) error {
+	log.Debugf("streamingPrivacyInterceptor was invoked")
 	intercept_policies := privacy.ExportContextPolicies()
 	if policy, ok := intercept_policies[info.FullMethod]; ok {
 
 		md, ok := metadata.FromIncomingContext(ss.Context())
+		log.Debugf("Metadata was received: %+v", md)
 		if len(policy) != 0 && ok {
 			return status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expected")
 		}
 
 		for key, expected_value := range policy {
-			log.Debugf("Tried key %s and value %+v", key, value)
+			log.Debugf("Tried key %s, looking for value %+v", key, expected_value)
 			actual_value, ok := md[key]
 			if !ok {
 				return status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
