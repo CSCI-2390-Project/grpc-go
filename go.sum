@@ -34,10 +34,8 @@ dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
-github.com/CSCI-2390-Project/grpc-go v1.99.0 h1:k1TpYJL87sk/MQdDP37CINRb+WfCnWFxGV1CYZ8w/KQ=
-github.com/CSCI-2390-Project/grpc-go v1.99.0/go.mod h1:TpgjCdwVRb1Bx3xXp3vErP36bFb7F1lq+vJf6TXjT4M=
-github.com/CSCI-2390-Project/privacy-go v1.0.9 h1:DkEZQsHX18nQtZIXWzKrsqeSM1fgCz/bTQZYDuG+1gg=
-github.com/CSCI-2390-Project/privacy-go v1.0.9/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
+github.com/CSCI-2390-Project/grpc-go v1.99.2 h1:DpCaZL4Mck6mz2cYfhGpXPwRyaAuZhgfPABJdCqZ8Ps=
+github.com/CSCI-2390-Project/grpc-go v1.99.2/go.mod h1:hPQ/aNJMZISyGtPZ98WmyCpZ31bZCq7HlQQh4amMH0Q=
 github.com/CSCI-2390-Project/privacy-go v1.99.1 h1:7oV90Js46tMer5WTZ+feWVoTlPgwNqadfy0A4N03oo8=
 github.com/CSCI-2390-Project/privacy-go v1.99.1/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
 github.com/CSCI-2390-Project/protobuf-go v1.99.1 h1:RuJcW/3qCaVfBuHQRiRUg84eIEf5yZcRT38rBuAiYNc=

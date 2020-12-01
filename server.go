@@ -514,7 +514,7 @@ func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnarySe
 		}
 
 		for key, expected_value := range policy {
-			log.Debugf("Tried key %s and value %+v", key, value)
+			log.Debugf("Tried key %s, looking for value %+v", key, expected_value)
 			actual_value, ok := md[key]
 			if !ok {
 				return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
@@ -543,14 +543,14 @@ func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamS
 
 		md, ok := metadata.FromIncomingContext(ss.Context())
 		if len(policy) != 0 && ok {
-			return nil, status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expected")
+			return status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expected")
 		}
 
 		for key, expected_value := range policy {
 			log.Debugf("Tried key %s and value %+v", key, value)
 			actual_value, ok := md[key]
 			if !ok {
-				return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
+				return status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
 			}
 			for _, v := range expected_value {
 				found := false
@@ -561,7 +561,7 @@ func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamS
 					}
 				}
 				if !found {
-					return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected value %s in %+v for key %s, but not found", v, actual_value, key)
+					return status.Errorf(codes.Unauthenticated, "(privacy) Expected value %s in %+v for key %s, but not found", v, actual_value, key)
 				}
 			}
 		}

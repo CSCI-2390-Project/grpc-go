@@ -2,7 +2,7 @@ module github.com/CSCI-2390-Project/grpc-go
 
 go 1.11
 
-replace google.golang.org/grpc => github.com/CSCI-2390-Project/grpc-go v1.99.1
+replace google.golang.org/grpc => github.com/CSCI-2390-Project/grpc-go v1.99.2
 
 replace google.golang.org/protobuf => github.com/CSCI-2390-Project/protobuf-go v1.99.1
 
