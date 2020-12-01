@@ -38,8 +38,14 @@ github.com/CSCI-2390-Project/grpc-go v1.36.1-0.20201029210533-f22495f2c83c h1:+e
 github.com/CSCI-2390-Project/grpc-go v1.36.1-0.20201029210533-f22495f2c83c/go.mod h1:fOnNYQfh5xvaQkX9luXZMhtKEjzetwUD1F3mKNrquaw=
 github.com/CSCI-2390-Project/privacy-go v1.0.3 h1:oSVT/yTZ86JHfOPIu+0yyhSa3PVgb/6DesB2l66i8JE=
 github.com/CSCI-2390-Project/privacy-go v1.0.3/go.mod h1:yCnb7LXxBFfuGh0ix6FcUGeI2FzcFoZArl648Bt5IqU=
-github.com/CSCI-2390-Project/privacy-go v1.0.9 h1:DkEZQsHX18nQtZIXWzKrsqeSM1fgCz/bTQZYDuG+1gg=
-github.com/CSCI-2390-Project/privacy-go v1.0.9/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126151853-2865e9a5e5e0 h1:P8TYj6IWDCiqE4YJOyBfdLrn6FXzxJX4+bJpQT7x87g=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126151853-2865e9a5e5e0/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126153442-19ee414cbd8c h1:s2gRO91ooxla06RGQORHRmmtc27PkBU6k/fdHr1s/gU=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126153442-19ee414cbd8c/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126155201-a34d98b2487d h1:xSg3q4qnz9GybPSRwX8bjkcJ4g1dVK5stNcPAMLkRm8=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126155201-a34d98b2487d/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126161349-6d371f6e2164 h1:f8MaVrZWj8dqzzSKV12MIKL7If26BTzLDPxcOESSCpk=
+github.com/CSCI-2390-Project/privacy-go v1.99.1-0.20201126161349-6d371f6e2164/go.mod h1:1widnfd0F+88i+atXNtVPAn+uDuU0xaY0RaWHTsfzWM=
 github.com/CSCI-2390-Project/protobuf-go v1.25.1-0.20201103164251-ba3a6e05f287 h1:+wicGB9gXxtGwYQD2OqqxDFyxME19h6ey3Mf12Jxc+w=
 github.com/CSCI-2390-Project/protobuf-go v1.25.1-0.20201103164251-ba3a6e05f287/go.mod h1:9JK6Fqge53i5BDJCTr6O9bMKDXy1Ey1cU4GYDlDbZm4=
 github.com/census-instrumentation/opencensus-proto v0.2.1 h1:glEXhBS5PSLLv4IXzLA5yPRVX4bilULVyxxbrfOtDAk=

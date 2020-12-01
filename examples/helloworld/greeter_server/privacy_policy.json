@@ -4,7 +4,14 @@
       "Message": "HelloRequest",
       "Field": "Name",
       "Conditions": {
-        "Copying": []
+        "Printing": [{
+            "allowed": false,
+            "if": "main.unsafeLogger"
+        }],
+        "Modifying": [{
+            "allowed": false,
+            "if": "main.unsafeLogger"
+        }]
       }
     }
   ]

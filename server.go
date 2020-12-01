@@ -33,8 +33,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	privacy "github.com/CSCI-2390-Project/privacy-go"
+	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/trace"
-
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/encoding"
@@ -502,9 +503,77 @@ func (s *Server) stopServerWorkers() {
 	}
 }
 
+func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) {
+
+	intercept_policies := privacy.ExportContextPolicies()
+	if policy, ok := intercept_policies[info.FullMethod]; ok {
+
+		md, ok := metadata.FromIncomingContext(ctx)
+		if len(policy) != 0 && ok {
+			return nil, status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expecting %+v", policy)
+		}
+
+		for key, expected_value := range policy {
+			log.Debugf("Tried key %s and value %+v", key, value)
+			actual_value, ok := md[key]
+			if !ok {
+				return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
+			}
+			for _, v := range expected_value {
+				found := false
+				for _, e := range actual_value {
+					if v == e {
+						found = true
+						break
+					}
+				}
+				if !found {
+					return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected value %s in %+v for key %s, but not found", v, actual_value, key)
+				}
+			}
+		}
+
+	}
+	return handler(ctx, req)
+}
+
+func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamServerInfo, handler StreamHandler) error {
+	intercept_policies := privacy.ExportContextPolicies()
+	if policy, ok := intercept_policies[info.FullMethod]; ok {
+
+		md, ok := metadata.FromIncomingContext(ss.Context())
+		if len(policy) != 0 && ok {
+			return nil, status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expected")
+		}
+
+		for key, expected_value := range policy {
+			log.Debugf("Tried key %s and value %+v", key, value)
+			actual_value, ok := md[key]
+			if !ok {
+				return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected key %s in request metadata, but not found", key)
+			}
+			for _, v := range expected_value {
+				found := false
+				for _, e := range actual_value {
+					if v == e {
+						found = true
+						break
+					}
+				}
+				if !found {
+					return nil, status.Errorf(codes.Unauthenticated, "(privacy) Expected value %s in %+v for key %s, but not found", v, actual_value, key)
+				}
+			}
+		}
+
+	}
+	return handler(srv, ss)
+}
+
 // NewServer creates a gRPC server which has no service registered and has not
 // started to accept requests yet.
 func NewServer(opt ...ServerOption) *Server {
+	opt = append(opt, UnaryInterceptor(unaryPrivacyInterceptor), StreamInterceptor(streamingPrivacyInterceptor))
 	opts := defaultServerOptions
 	for _, o := range opt {
 		o.apply(&opts)

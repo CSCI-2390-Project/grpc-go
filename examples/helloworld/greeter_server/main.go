@@ -21,11 +21,10 @@ package main
 
 import (
 	"context"
-	"log"
-	"net"
-
+	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	pb "google.golang.org/grpc/examples/helloworld/helloworld"
+	"net"
 )
 
 const (
@@ -37,14 +36,26 @@ type server struct {
 	pb.UnimplementedGreeterServer
 }
 
+// A code path you can't trust, because it will print whatever it logs to aggregation servers outside the country,
+// violating data sovereignty laws.
+func unsafeLogger(in *pb.HelloRequest) {
+	log.Printf("<unsafeLogger> Hehe, I am going to do mischief with this value: %v", in)
+}
+
 // SayHello implements helloworld.GreeterServer
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
-	log.Printf("Received: %v", in.Name)
-	log.Printf("Received: %v", in.GetName())
-	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
+	unsafeLogger(in)
+	err := in.SetName("not so sensitive now, are we?")
+	if err != nil {
+		panic(err)
+	}
+	new_value := "Hello " + in.GetName()
+	log.Printf("This is the value we are computing in our SayHello function: %+v", new_value)
+	return &pb.HelloReply{Message: new_value}, nil
 }
 
 func main() {
+	log.SetLevel(log.DebugLevel)
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)

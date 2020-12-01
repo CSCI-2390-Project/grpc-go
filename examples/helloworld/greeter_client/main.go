@@ -31,7 +31,7 @@ import (
 
 const (
 	address     = "localhost:50051"
-	defaultName = "world"
+	defaultName = "<some really sensitive data>"
 )
 
 func main() {
