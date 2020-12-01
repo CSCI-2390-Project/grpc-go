@@ -14,9 +14,7 @@
   "RequestValidation": [{
     "MethodName": "/helloworld.Greeter/SayHello",
     "MatchingContext": {
-      ":authority": ["localhost:50051"],
-      "content-type": ["application/grpc"],
-      "user-agent": ["grpc-go/1.34.0-dev"]
+      ":authority": ["localhost:50051"]
     }
   }]
 }
