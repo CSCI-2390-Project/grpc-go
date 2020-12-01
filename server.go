@@ -511,7 +511,7 @@ func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnarySe
 
 		md, ok := metadata.FromIncomingContext(ctx)
 		log.Debugf("Metadata was received: %+v", md)
-		if len(policy) != 0 && ok {
+		if !ok || (len(policy) != 0 && len(md) == 0) {
 			return nil, status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expecting %+v", policy)
 		}
 
@@ -547,7 +547,7 @@ func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamS
 
 		md, ok := metadata.FromIncomingContext(ss.Context())
 		log.Debugf("Metadata was received: %+v", md)
-		if len(policy) != 0 && ok {
+		if !ok || (len(policy) != 0 && len(md) == 0) {
 			return status.Errorf(codes.Unauthenticated, "(privacy) Metadata not supplied when expected")
 		}
 

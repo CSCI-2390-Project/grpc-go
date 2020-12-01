@@ -12,9 +12,11 @@
     }
   ],
   "RequestValidation": [{
-    "MethodName": "foo",
+    "MethodName": "/helloworld.Greeter/SayHello",
     "MatchingContext": {
-      "bar": ["baz"]
+      ":authority": ["localhost:50051"],
+      "content-type": ["application/grpc"],
+      "user-agent": ["grpc-go/1.34.0-dev"]
     }
   }]
 }
