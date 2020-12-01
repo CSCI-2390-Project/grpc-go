@@ -506,6 +506,7 @@ func (s *Server) stopServerWorkers() {
 func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) {
 	log.Debugf("unaryPrivacyInterceptor was invoked")
 	intercept_policies := privacy.ExportContextPolicies()
+	log.Debugf("Intercept policies were received: %+v", intercept_policies)
 	if policy, ok := intercept_policies[info.FullMethod]; ok {
 
 		md, ok := metadata.FromIncomingContext(ctx)
@@ -541,6 +542,7 @@ func unaryPrivacyInterceptor(ctx context.Context, req interface{}, info *UnarySe
 func streamingPrivacyInterceptor(srv interface{}, ss ServerStream, info *StreamServerInfo, handler StreamHandler) error {
 	log.Debugf("streamingPrivacyInterceptor was invoked")
 	intercept_policies := privacy.ExportContextPolicies()
+	log.Debugf("Intercept policies were received: %+v", intercept_policies)
 	if policy, ok := intercept_policies[info.FullMethod]; ok {
 
 		md, ok := metadata.FromIncomingContext(ss.Context())
